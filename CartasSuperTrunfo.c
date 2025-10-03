@@ -1,22 +1,72 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+  // Váriaveis para a carta1;
+     
+     char estado1[] = "Rio de Janeiro";
+     char carta1[] = "A";
+     char cidade1[] = "Rio de Janeiro";
+     int populacao1 = 5000000;
+     float area1 = 1200.5;
+     float pib1 = 300000.0;
+     int pontos_turisticos1 = 10;
 
-    return 0;
+  // Váriaveis para a carta2;
+    
+      char estado2 = "Sao Paulo";
+      char carta2 = "B";
+      char cidade2 = "Sao Paulo";
+      int populacao2 = 12000000;
+      float area2 = 1500.0;
+      float pib2 = 400000.0;
+      int pontos_turisticos2 = 15;
+
+  //Exibir as cartas; 
+
+    printf("Carta 1:\n");
+    printf("Estado: %s\n", estado1);
+    printf("Cidade: %s\n", cidade1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f km2\n", area1);
+    printf("PIB: %.2f\n", pib1);
+    printf("Pontos turisticos: %d\n", pontos_turisticos1);
+    printf("\n");
+    printf("Carta 2:\n");
+    printf("Estado: %s\n", estado2);
+    printf("Cidade: %s\n", cidade2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f km2\n", area2);
+    printf("PIB: %.2f\n", pib2);
+    printf("Pontos turisticos: %d\n", pontos_turisticos2);
+    printf("\nComparando as cartas...\n");
+  
+    // Resultado do jogo;
+    
+  if(populacao1 > populacao2) {
+      printf("Carta 1 vence!\n");
+  } else(populacao1 < populacao2) {
+      printf("Carta 2 vence!\n");
+  }
+
+      if (area1 > area2) {
+          printf("Carta 1 vence!\n");
+      } else(area1 < area2) {
+          printf("Carta 2 vence!\n");
+      } 
+
+          if (pib1 > pib2) {
+              printf("Carta 1 vence!\n");
+          } else(pib1 < pib2) {
+              printf("Carta 2 vence!\n");
+         
+
+          if (pontos_turisticos1 > pontos_turisticos2) {
+              printf("Carta 1 vence!\n");
+          } else(pontos_turisticos1 < pontos_turisticos2) {
+              printf("Carta 2 vence!\n");
+          }
+      
+
+return 0;
+}
 }
